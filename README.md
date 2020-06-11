@@ -1,5 +1,7 @@
 # Habit Tracker
 Hackday team project by [Faduma Mohammed](https://github.com/FadumaM), [Dev Morgan](https://github.com/devmoran) and [Louisa Spicer](https://github.com/louisaspicer)
+
+
 Project idea: To be able to tick off any daily habits you want to track, and view your monthly progress
 
 Build in React Native with Expo. 
