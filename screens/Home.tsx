@@ -3,14 +3,15 @@ import { StyleSheet, SafeAreaView, View, FlatList } from "react-native";
 import data from "../data/habits.json";
 import Card from "../components/Card";
 import Text from "../components/Text";
+import Heading from "../components/Heading";
 import { spacing } from "../styled/theme";
 
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text size={"l"}>Today</Text>
-        <Text size={"m"}>What did you get done today?</Text>
+        <Heading>Today</Heading>
+        <Text size={"l"}>What did you get done today?</Text>
       </View>
       <FlatList
         data={data.habits}
@@ -29,14 +30,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
     justifyContent: "center",
-    paddingHorizontal: spacing.l,
+    paddingHorizontal: spacing.m,
   },
   header: {
     marginTop: spacing.xl,
     marginBottom: spacing.l,
-    width: 344,
   },
   row: {
     height: 100,

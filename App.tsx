@@ -1,8 +1,10 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import HomeScreen from "./screens/Home";
 import Text from "./components/Text";
 import Heading from "./components/Heading";
 
@@ -10,14 +12,6 @@ type BottomTabParams = {
   Today: undefined;
   Journal: undefined;
 };
-
-function HomeScreen() {
-  return (
-    <View style={styles.container}>
-      <Heading>Today</Heading>
-    </View>
-  );
-}
 
 function HabitScreen() {
   return (

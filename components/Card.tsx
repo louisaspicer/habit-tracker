@@ -1,6 +1,7 @@
 import React from "react";
 import Text from "./Text";
 import { View, StyleSheet } from "react-native";
+import { spacing } from "../styled/theme";
 
 type CardProps = {
   name: string;
@@ -12,14 +13,16 @@ const Card = ({ name, description }: CardProps) => {
     <View style={styles.container}>
       <Text size={"m"}>{name}</Text>
       <View style={styles.description}>
-        <Text
-          margin={"0 s 0 0"}
-          ellipsizeMode="tail"
-          numberOfLines={2}
-          size={"s"}
-        >
-          {description}
-        </Text>
+        <View style={styles.descriptionText}>
+          <Text
+            margin={"0 0 0 0"}
+            ellipsizeMode="tail"
+            numberOfLines={2}
+            size={"s"}
+          >
+            {description}
+          </Text>
+        </View>
         <View style={styles.square}></View>
       </View>
     </View>
@@ -31,16 +34,20 @@ const styles = StyleSheet.create({
     borderColor: "#E3E3E3",
     borderWidth: 3,
     borderRadius: 8,
-    width: 156,
-    padding: 12,
-    marginRight: 16,
+    width: "49%",
+    padding: spacing.xs,
+    marginRight: spacing.s,
   },
   description: {
     flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  descriptionText: {
+    maxWidth: 136,
   },
   square: {
-    width: 16,
-    height: 16,
+    width: spacing.m,
+    height: spacing.m,
     backgroundColor: "#E3E3E3",
     borderRadius: 5,
   },
