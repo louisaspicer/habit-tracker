@@ -38,6 +38,8 @@ export const typography = {
   },
 };
 
+export type Color = keyof typeof colors;
+
 export const colors = {
   black: "#282222",
   white: "#FFFFFF",

@@ -2,8 +2,8 @@
   "habits": [
     {
       "name": "Practice yoga",
-      "description": "Every morning for 15 min",
-      "color": "tomato",
+      "description": "Every morning for 20 min",
+      "color": "apricot",
       "dates": [
         {
           "day": "01/06/2020",
@@ -129,7 +129,7 @@
     },
     {
       "name": "Meditate",
-      "description": "Every morning for 15 min",
+      "description": "Use Headspace for a least 10 mins every day",
       "color": "pink",
       "dates": [
         {
@@ -256,7 +256,7 @@
     },
     {
       "name": "Workout",
-      "description": "Every morning for 45 min",
+      "description": "Every other morning for 45 min",
       "color": "blue",
       "dates": [
         {
@@ -511,7 +511,7 @@
     {
       "name": "Cook dinner",
       "description": "No takeout, cook dinner",
-      "color": "orange",
+      "color": "purple",
       "dates": [
         {
           "day": "01/06/2020",
@@ -638,7 +638,7 @@
     {
       "name": "No spend",
       "description": "Don't spend any money on anything!!",
-      "color": "yellow",
+      "color": "apricot",
       "dates": [
         {
           "day": "01/06/2020",

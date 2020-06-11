@@ -29,7 +29,7 @@ export function HabitMonthView({ habit }: { habit: Habit }) {
           const blockStyle = StyleSheet.flatten([
             styles.dayBlock,
             h.isDone
-              ? { backgroundColor: habit.color, borderWidth: 0 }
+              ? { backgroundColor: colors[habit.color], borderWidth: 0 }
               : hasDatePast
               ? { backgroundColor: colors.lightGray, borderWidth: 0 }
               : {},

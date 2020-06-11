@@ -1,15 +1,14 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, ScrollView } from "react-native";
 import * as habitData from "../data/habits.json";
 import { HabitMonthView } from "../components/HabitMonthView";
 import { spacing } from "../styled/theme";
-import { ScrollView } from "react-native-gesture-handler";
 import { Heading } from "../components/Heading";
 import Text from "../components/Text";
 
 export function JournalScreen() {
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView style={{ flex: 1 }} contentContainerStyle={styles.container}>
       <Heading size="xl">Journal</Heading>
       <Text margin="0 0 l 0" color="gray">
         1 - 30 June
@@ -26,7 +25,6 @@ export function JournalScreen() {
 const styles = StyleSheet.create({
   container: {
     paddingTop: 100,
-    flex: 1,
     backgroundColor: "white",
     padding: 30,
   },
