@@ -1,0 +1,766 @@
+{
+  "habits": [
+    {
+      "name": "Practice yoga",
+      "description": "Every morning for 15 min",
+      "color": "",
+      "dates":[
+        {
+          "day": "01/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "02/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "03/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "04/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "05/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "06/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "07/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "08/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "09/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "10/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "11/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "12/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "13/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "14/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "15/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "16/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "17/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "18/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "19/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "20/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "21/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "22/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "23/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "24/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "25/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "26/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "27/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "28/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "29/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "30/06/2020",
+          "isDone": false
+        }
+      ]
+    },
+    {
+      "name": "Meditate",
+      "description": "Every morning for 15 min",
+      "color": "",
+      "dates":[
+        {
+          "day": "01/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "02/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "03/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "04/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "05/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "06/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "07/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "08/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "09/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "10/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "11/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "12/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "13/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "14/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "15/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "16/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "17/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "18/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "19/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "20/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "21/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "22/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "23/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "24/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "25/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "26/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "27/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "28/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "29/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "30/06/2020",
+          "isDone": false
+        }
+      ]
+    },
+    {
+      "name": "Workout",
+      "description": "Every morning for 45 min",
+      "color": "",
+      "dates":[
+        {
+          "day": "01/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "02/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "03/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "04/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "05/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "06/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "07/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "08/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "09/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "10/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "11/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "12/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "13/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "14/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "15/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "16/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "17/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "18/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "19/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "20/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "21/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "22/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "23/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "24/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "25/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "26/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "27/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "28/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "29/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "30/06/2020",
+          "isDone": false
+        }
+      ]
+    },
+    {
+      "name": "Go to bed on time",
+      "description": "Sleep before 1:30 am",
+      "color": "",
+      "dates":[
+        {
+          "day": "01/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "02/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "03/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "04/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "05/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "06/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "07/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "08/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "09/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "10/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "11/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "12/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "13/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "14/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "15/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "16/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "17/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "18/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "19/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "20/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "21/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "22/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "23/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "24/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "25/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "26/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "27/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "28/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "29/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "30/06/2020",
+          "isDone": false
+        }
+      ]
+    },
+    {
+      "name": "Cook dinner",
+      "description": "No takeout, cook dinner",
+      "color": "",
+      "dates":[
+        {
+          "day": "01/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "02/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "03/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "04/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "05/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "06/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "07/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "08/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "09/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "10/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "11/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "12/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "13/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "14/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "15/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "16/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "17/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "18/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "19/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "20/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "21/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "22/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "23/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "24/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "25/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "26/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "27/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "28/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "29/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "30/06/2020",
+          "isDone": false
+        }
+      ]
+    },
+    {
+      "name": "No spend",
+      "description": "Don't spend any money on anything!!",
+      "color": "",
+      "dates":[
+        {
+          "day": "01/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "02/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "03/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "04/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "05/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "06/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "07/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "08/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "09/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "10/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "11/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "12/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "13/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "14/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "15/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "16/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "17/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "18/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "19/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "20/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "21/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "22/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "23/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "24/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "25/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "26/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "27/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "28/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "29/06/2020",
+          "isDone": false
+        },
+        {
+          "day": "30/06/2020",
+          "isDone": false
+        }
+      ]
+    }
+  ]
+}
