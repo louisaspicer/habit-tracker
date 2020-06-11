@@ -1,21 +1,20 @@
 import React from "react";
-import { StyleSheet, Text, SafeAreaView, View, FlatList } from "react-native";
-import styles from "./styles";
+import { StyleSheet, SafeAreaView, View, FlatList } from "react-native";
 import data from "../data/habits.json";
 import Card from "../components/Card";
-import Header from "../components/Header";
+import Text from "../components/Text";
+import { spacing } from "../styled/theme";
 
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Header />
-      <View>
-        <Text>Today</Text>
-        <Text>What did you get done today?</Text>
+      <View style={styles.header}>
+        <Text size={"l"}>Today</Text>
+        <Text size={"m"}>What did you get done today?</Text>
       </View>
       <FlatList
         data={data.habits}
-        columnWrapperStyle={style.row}
+        columnWrapperStyle={styles.row}
         numColumns={2}
         renderItem={({ item }) => (
           <Card name={item.name} description={item.description} />
@@ -26,11 +25,22 @@ const HomeScreen = () => {
   );
 };
 
-const style = StyleSheet.create({
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingHorizontal: spacing.l,
+  },
+  header: {
+    marginTop: spacing.xl,
+    marginBottom: spacing.l,
+    width: 344,
+  },
   row: {
     height: 100,
-    marginTop: 20,
-    flex: 3,
+    marginTop: spacing.m,
   },
 });
 
