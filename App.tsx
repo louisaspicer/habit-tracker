@@ -18,11 +18,40 @@ function HomeScreen() {
   );
 }
 
+function HabitScreen() {
+  return (
+    <View style={styles.container}>
+      <Text>Habit</Text>
+    </View>
+  );
+}
+
+function HomeStackScreen() {
+  const HomeStack = createStackNavigator();
+
+  return (
+    <HomeStack.Navigator>
+      <HomeStack.Screen name="Home" component={HomeScreen} />
+    </HomeStack.Navigator>
+  );
+}
+
 function JournalScreen() {
   return (
     <View style={styles.container}>
       <Text>Journal</Text>
     </View>
+  );
+}
+
+function JournalStackScreen() {
+  const JournalStack = createStackNavigator();
+
+  return (
+    <JournalStack.Navigator>
+      <JournalStack.Screen name="Journal" component={JournalScreen} />
+      <JournalStack.Screen name="Habit" component={HabitScreen} />
+    </JournalStack.Navigator>
   );
 }
 
@@ -56,9 +85,9 @@ export default function App() {
           options={{
             title: "Home",
           }}
-          component={HomeScreen}
+          component={HomeStackScreen}
         />
-        <Tab.Screen name="Journal" component={JournalScreen} />
+        <Tab.Screen name="Journal" component={JournalStackScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
