@@ -13,6 +13,7 @@
     "@react-navigation/native": "^5.5.1",
     "@react-navigation/stack": "^5.5.1",
     "@types/expo__vector-icons": "^9.0.1",
+    "@types/styled-components": "^5.1.0",
     "expo": "^37.0.0",
     "expo-updates": "~0.2.1",
     "react": "16.9.0",
@@ -23,7 +24,8 @@
     "react-native-safe-area-context": "0.7.3",
     "react-native-screens": "~2.2.0",
     "react-native-unimodules": "~0.8.1",
-    "react-native-web": "^0.11.7"
+    "react-native-web": "^0.11.7",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
