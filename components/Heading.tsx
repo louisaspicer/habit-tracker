@@ -4,48 +4,45 @@ import { typography, colors } from '../styled/theme';
 import { calculateMargin } from '../styled/margin';
 import { useFonts } from '@use-expo/font';
 
-export type TextColor = 'black' | 'gray' | 'white';
-
-interface TextProps extends AccessibilityProps {
-    color?: TextColor;
+interface HeadingProps extends AccessibilityProps {
     isUppercase?: boolean;
     margin?: string;
     align?: 'auto' | 'left' | 'right' | 'center' | 'justify';
-    size?: keyof typeof typography.size.text;
+    size?: keyof typeof typography.size.heading;
     isUnderlined?: boolean;
     children: React.ReactNode;
     onPress?: () => void;
 }
 
-export const Text = ({
+export const Heading = ({
     margin,
     align = 'left',
     size,
-    color,
     isUppercase,
     isUnderlined,
     onPress,
     children,
     ...props
-}: TextProps) => {
+}: HeadingProps) => {
     const [fontsLoaded] = useFonts({
-        'Calibre-Regular': require('../assets/fonts/Calibre-Regular.otf'),
+        'Calibre-Bold': require('../assets/fonts/Calibre-Bold.otf'),
+        'Calibre-SemiBold': require('../assets/fonts/Calibre-Semibold.otf'),
     });
 
     return (
         <RNText
             style={{
                 ...calculateMargin(margin),
-                fontFamily: fontsLoaded ? 'Calibre-Regular' : 'Times New Roman',
-                fontWeight: '700',
+                fontFamily: fontsLoaded ? 'Calibre-Bold' : 'Times New Roman',
+                fontWeight: '400',
                 textAlign: align,
                 lineHeight: size
-                    ? typography.lineheight.body[size]
-                    : typography.lineheight.body.m,
+                    ? typography.lineheight.heading[size]
+                    : typography.lineheight.heading.xl,
                 fontSize: size
-                    ? typography.size.text[size]
-                    : typography.size.text.m,
-                color: color ? colors[color] : colors.black,
+                    ? typography.size.heading[size]
+                    : typography.size.heading.xl,
+                color: colors.black,
                 textTransform: isUppercase ? 'uppercase' : 'none',
                 textDecorationLine: isUnderlined ? 'underline' : 'none',
             }}
@@ -57,4 +54,4 @@ export const Text = ({
     );
 };
 
-export default Text;
+export default Heading;
