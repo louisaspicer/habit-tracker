@@ -1,12 +1,19 @@
 import React from "react";
-import { StyleSheet, SafeAreaView, View, FlatList } from "react-native";
+import {
+    StyleSheet,
+    SafeAreaView,
+    View,
+    FlatList,
+    ScrollView,
+} from "react-native";
 import data from "../data/habits.json";
 import Card from "../components/Card";
 import Text from "../components/Text";
 import Heading from "../components/Heading";
-import { spacing } from "../styled/theme";
+import { spacing, colors } from "../styled/theme";
 import styled from "styled-components";
 import WaveBackground from "../components/WaveBackground";
+
 const Background = styled(View)`
     height: 100px;
     width: 100%;
@@ -17,11 +24,14 @@ const Background = styled(View)`
 
 const TodayScreen = () => {
     return (
-        <SafeAreaView>
+        <View style={styles.container}>
             <Background>
                 <WaveBackground />
             </Background>
-            <View style={styles.container}>
+            <ScrollView
+                style={styles.scroll}
+                contentInsetAdjustmentBehavior="never"
+            >
                 <View style={styles.header}>
                     <Heading>Today</Heading>
                     <Text size={"l"}>What did you get done today?</Text>
@@ -35,17 +45,21 @@ const TodayScreen = () => {
                     )}
                     keyExtractor={(item) => item.name}
                 />
-            </View>
-        </SafeAreaView>
+            </ScrollView>
+        </View>
     );
 };
 
 const styles = StyleSheet.create({
     container: {
+        backgroundColor: colors.background,
+    },
+    scroll: {
         marginHorizontal: spacing.m,
+        height: "100%",
     },
     header: {
-        marginTop: 80,
+        marginTop: 120,
         marginBottom: spacing.l,
     },
     row: {

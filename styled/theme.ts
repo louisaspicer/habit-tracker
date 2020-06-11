@@ -25,9 +25,9 @@ export const typography = {
     lineheight: {
         body: {
             l: 28,
-            m: 24,
-            s: 20,
-            xs: 18,
+            m: 16,
+            s: 12,
+            xs: 8,
         },
         heading: {
             xl: 42,
@@ -37,6 +37,8 @@ export const typography = {
         },
     },
 };
+
+export type Color = keyof typeof colors;
 
 export const colors = {
     black: "#282222",
@@ -53,6 +55,6 @@ export const colors = {
 };
 
 export const misc = {
-    borderRadius: "8px",
+    borderRadius: 8,
     shadow: "0px 8px 12px rgba(0, 0, 0, 0.15)",
 };

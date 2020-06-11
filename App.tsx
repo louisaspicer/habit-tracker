@@ -1,26 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { StyleSheet, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import Text from "./components/Text";
 import { colors } from "./styled/theme";
-import Heading from "./components/Heading";
 import TodayScreen from "./screens/Today";
+import { JournalScreen } from "./screens/Journal";
 
 type BottomTabParams = {
     Today: undefined;
     Journal: undefined;
 };
-
-function HabitScreen() {
-    return (
-        <View style={styles.container}>
-            <Heading>Habit</Heading>
-        </View>
-    );
-}
 
 function TodayStackScreen() {
     const TodayStack = createStackNavigator();
@@ -29,26 +20,6 @@ function TodayStackScreen() {
         <TodayStack.Navigator screenOptions={{ headerShown: false }}>
             <TodayStack.Screen name="Today" component={TodayScreen} />
         </TodayStack.Navigator>
-    );
-}
-
-function JournalScreen() {
-    return (
-        <View style={styles.container}>
-            <Heading>Journal</Heading>
-            <Text size="l">1 - 30 June</Text>
-        </View>
-    );
-}
-
-function JournalStackScreen() {
-    const JournalStack = createStackNavigator();
-
-    return (
-        <JournalStack.Navigator>
-            <JournalStack.Screen name="Journal" component={JournalScreen} />
-            <JournalStack.Screen name="Habit" component={HabitScreen} />
-        </JournalStack.Navigator>
     );
 }
 
@@ -88,17 +59,8 @@ export default function App() {
                     }}
                     component={TodayStackScreen}
                 />
-                <Tab.Screen name="Journal" component={JournalStackScreen} />
+                <Tab.Screen name="Journal" component={JournalScreen} />
             </Tab.Navigator>
         </NavigationContainer>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
-    },
-});
