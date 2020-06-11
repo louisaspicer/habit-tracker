@@ -5,16 +5,30 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import Text from "./components/Text";
+import { colors } from "./styled/theme";
 import Heading from "./components/Heading";
+import styled from "styled-components";
+import WaveBackground from "./components/WaveBackground";
 
 type BottomTabParams = {
     Today: undefined;
     Journal: undefined;
 };
 
-function HomeScreen() {
+const Background = styled(View)`
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+`;
+
+function TodayScreen() {
     return (
         <View style={styles.container}>
+            <Background>
+                <WaveBackground />
+            </Background>
             <Heading>Today</Heading>
         </View>
     );
@@ -32,8 +46,8 @@ function TodayStackScreen() {
     const TodayStack = createStackNavigator();
 
     return (
-        <TodayStack.Navigator>
-            <TodayStack.Screen name="Home" component={HomeScreen} />
+        <TodayStack.Navigator screenOptions={{ headerShown: false }}>
+            <TodayStack.Screen name="Today" component={TodayScreen} />
         </TodayStack.Navigator>
     );
 }
@@ -65,15 +79,13 @@ export default function App() {
         <NavigationContainer>
             <Tab.Navigator
                 screenOptions={({ route }) => ({
-                    tabBarIcon: ({ focused, color, size }) => {
+                    tabBarIcon: ({ color, size }) => {
                         let iconName;
                         // TODO: replace icons
                         if (route.name === "Today") {
-                            iconName = focused
-                                ? "ios-information-circle"
-                                : "ios-information-circle-outline";
+                            iconName = "md-today";
                         } else if (route.name === "Journal") {
-                            iconName = focused ? "ios-list-box" : "ios-list";
+                            iconName = "md-calendar";
                         }
                         return (
                             <Ionicons
@@ -85,8 +97,8 @@ export default function App() {
                     },
                 })}
                 tabBarOptions={{
-                    activeTintColor: "tomato",
-                    inactiveTintColor: "gray",
+                    activeTintColor: colors.pink,
+                    inactiveTintColor: colors.gray,
                 }}
             >
                 <Tab.Screen
@@ -105,8 +117,9 @@ export default function App() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
+        backgroundColor: colors.background,
+        alignItems: "flex-start",
+        justifyContent: "flex-start",
+        minHeight: "100%",
     },
 });
