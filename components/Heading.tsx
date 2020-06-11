@@ -1,13 +1,13 @@
-import * as React from 'react';
-import { Text as RNText, AccessibilityProps } from 'react-native';
-import { typography, colors } from '../styled/theme';
-import { calculateMargin } from '../styled/margin';
-import { useFonts } from '@use-expo/font';
+import * as React from "react";
+import { Text as RNText, AccessibilityProps } from "react-native";
+import { typography, colors } from "../styled/theme";
+import { calculateMargin } from "../styled/margin";
+import { useFonts } from "@use-expo/font";
 
 interface HeadingProps extends AccessibilityProps {
     isUppercase?: boolean;
     margin?: string;
-    align?: 'auto' | 'left' | 'right' | 'center' | 'justify';
+    align?: "auto" | "left" | "right" | "center" | "justify";
     size?: keyof typeof typography.size.heading;
     isUnderlined?: boolean;
     children: React.ReactNode;
@@ -16,7 +16,7 @@ interface HeadingProps extends AccessibilityProps {
 
 export const Heading = ({
     margin,
-    align = 'left',
+    align = "left",
     size,
     isUppercase,
     isUnderlined,
@@ -25,16 +25,16 @@ export const Heading = ({
     ...props
 }: HeadingProps) => {
     const [fontsLoaded] = useFonts({
-        'Calibre-Bold': require('../assets/fonts/Calibre-Bold.otf'),
-        'Calibre-SemiBold': require('../assets/fonts/Calibre-Semibold.otf'),
+        "Calibre-Bold": require("../assets/fonts/Calibre-Bold.otf"),
+        "Calibre-SemiBold": require("../assets/fonts/Calibre-Semibold.otf"),
     });
 
     return (
         <RNText
             style={{
                 ...calculateMargin(margin),
-                fontFamily: fontsLoaded ? 'Calibre-Bold' : 'Times New Roman',
-                fontWeight: '400',
+                fontFamily: fontsLoaded ? "Calibre-Bold" : "Times New Roman",
+                fontWeight: "400",
                 textAlign: align,
                 lineHeight: size
                     ? typography.lineheight.heading[size]
@@ -43,8 +43,8 @@ export const Heading = ({
                     ? typography.size.heading[size]
                     : typography.size.heading.xl,
                 color: colors.black,
-                textTransform: isUppercase ? 'uppercase' : 'none',
-                textDecorationLine: isUnderlined ? 'underline' : 'none',
+                textTransform: isUppercase ? "uppercase" : "none",
+                textDecorationLine: isUnderlined ? "underline" : "none",
             }}
             onPress={onPress}
             {...props}

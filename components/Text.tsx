@@ -1,16 +1,16 @@
-import * as React from 'react';
-import { Text as RNText, AccessibilityProps } from 'react-native';
-import { typography, colors } from '../styled/theme';
-import { calculateMargin } from '../styled/margin';
-import { useFonts } from '@use-expo/font';
+import * as React from "react";
+import { Text as RNText, AccessibilityProps } from "react-native";
+import { typography, colors } from "../styled/theme";
+import { calculateMargin } from "../styled/margin";
+import { useFonts } from "@use-expo/font";
 
-export type TextColor = 'black' | 'gray' | 'white';
+export type TextColor = "black" | "gray" | "white";
 
 interface TextProps extends AccessibilityProps {
     color?: TextColor;
     isUppercase?: boolean;
     margin?: string;
-    align?: 'auto' | 'left' | 'right' | 'center' | 'justify';
+    align?: "auto" | "left" | "right" | "center" | "justify";
     size?: keyof typeof typography.size.text;
     isUnderlined?: boolean;
     children: React.ReactNode;
@@ -19,7 +19,7 @@ interface TextProps extends AccessibilityProps {
 
 export const Text = ({
     margin,
-    align = 'left',
+    align = "left",
     size,
     color,
     isUppercase,
@@ -29,15 +29,15 @@ export const Text = ({
     ...props
 }: TextProps) => {
     const [fontsLoaded] = useFonts({
-        'Calibre-Regular': require('../assets/fonts/Calibre-Regular.otf'),
+        "Calibre-Regular": require("../assets/fonts/Calibre-Regular.otf"),
     });
 
     return (
         <RNText
             style={{
                 ...calculateMargin(margin),
-                fontFamily: fontsLoaded ? 'Calibre-Regular' : 'Times New Roman',
-                fontWeight: '700',
+                fontFamily: fontsLoaded ? "Calibre-Regular" : "Times New Roman",
+                fontWeight: "700",
                 textAlign: align,
                 lineHeight: size
                     ? typography.lineheight.body[size]
@@ -46,8 +46,8 @@ export const Text = ({
                     ? typography.size.text[size]
                     : typography.size.text.m,
                 color: color ? colors[color] : colors.black,
-                textTransform: isUppercase ? 'uppercase' : 'none',
-                textDecorationLine: isUnderlined ? 'underline' : 'none',
+                textTransform: isUppercase ? "uppercase" : "none",
+                textDecorationLine: isUnderlined ? "underline" : "none",
             }}
             onPress={onPress}
             {...props}

@@ -1,11 +1,11 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Ionicons from '@expo/vector-icons/Ionicons';
-import Text from './components/Text';
-import Heading from './components/Heading';
+import React from "react";
+import { StyleSheet, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import Text from "./components/Text";
+import Heading from "./components/Heading";
 
 type BottomTabParams = {
     Today: undefined;
@@ -68,12 +68,12 @@ export default function App() {
                     tabBarIcon: ({ focused, color, size }) => {
                         let iconName;
                         // TODO: replace icons
-                        if (route.name === 'Today') {
+                        if (route.name === "Today") {
                             iconName = focused
-                                ? 'ios-information-circle'
-                                : 'ios-information-circle-outline';
-                        } else if (route.name === 'Journal') {
-                            iconName = focused ? 'ios-list-box' : 'ios-list';
+                                ? "ios-information-circle"
+                                : "ios-information-circle-outline";
+                        } else if (route.name === "Journal") {
+                            iconName = focused ? "ios-list-box" : "ios-list";
                         }
                         return (
                             <Ionicons
@@ -85,14 +85,14 @@ export default function App() {
                     },
                 })}
                 tabBarOptions={{
-                    activeTintColor: 'tomato',
-                    inactiveTintColor: 'gray',
+                    activeTintColor: "tomato",
+                    inactiveTintColor: "gray",
                 }}
             >
                 <Tab.Screen
                     name="Today"
                     options={{
-                        title: 'Today',
+                        title: "Today",
                     }}
                     component={TodayStackScreen}
                 />
@@ -105,8 +105,8 @@ export default function App() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+        backgroundColor: "#fff",
+        alignItems: "center",
+        justifyContent: "center",
     },
 });

@@ -39,20 +39,20 @@ export const typography = {
 };
 
 export const colors = {
-    black: '#282222',
-    white: '#FFFFFF',
-    gray: '#57697B',
-    lightGray: '#E1E1E1',
-    background: '#FBFBFB',
+    black: "#282222",
+    white: "#FFFFFF",
+    gray: "#57697B",
+    lightGray: "#E1E1E1",
+    background: "#FBFBFB",
 
-    pink: '#FF7171',
-    blue: '#1B93EA',
-    purple: '#E17CEA',
-    apricot: '#FFAD80',
-    green: '#4DCFA0',
+    pink: "#FF7171",
+    blue: "#1B93EA",
+    purple: "#E17CEA",
+    apricot: "#FFAD80",
+    green: "#4DCFA0",
 };
 
 export const misc = {
-    borderRadius: '8px',
-    shadow: '0px 8px 12px rgba(0, 0, 0, 0.15)',
+    borderRadius: "8px",
+    shadow: "0px 8px 12px rgba(0, 0, 0, 0.15)",
 };
