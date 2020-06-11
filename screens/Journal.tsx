@@ -16,7 +16,7 @@ export function JournalScreen() {
       </Text>
       {habitData.habits.map((h, i) => (
         <View style={styles.monthView}>
-          <HabitMonthView key={h.name + 1} colour="tomato" habit={h} />
+          <HabitMonthView key={h.name + 1} habit={h} />
         </View>
       ))}
     </ScrollView>

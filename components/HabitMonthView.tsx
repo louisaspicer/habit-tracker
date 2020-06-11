@@ -4,13 +4,7 @@ import Text from "./Text";
 import { colors } from "../styled/theme";
 import { Habit } from "../types/habits";
 
-export function HabitMonthView({
-  colour,
-  habit,
-}: {
-  colour: string;
-  habit: Habit;
-}) {
+export function HabitMonthView({ habit }: { habit: Habit }) {
   const [dayBlocks, setDayBlocks] = useState<React.ReactNode[]>([]);
 
   useEffect(() => {
@@ -32,7 +26,7 @@ export function HabitMonthView({
       const blockStyle = StyleSheet.flatten([
         styles.dayBlock,
         h.isDone
-          ? { backgroundColor: colour, borderWidth: 0 }
+          ? { backgroundColor: habit.color, borderWidth: 0 }
           : hasDatePast
           ? { backgroundColor: colors.lightGray, borderWidth: 0 }
           : {},
