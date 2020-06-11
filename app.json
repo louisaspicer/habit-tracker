@@ -1,0 +1,17 @@
+{
+  "name": "habittracker",
+  "displayName": "habittracker",
+  "expo": {
+    "name": "habittracker",
+    "slug": "habittracker",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
