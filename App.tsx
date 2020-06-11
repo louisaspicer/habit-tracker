@@ -7,32 +7,12 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import Text from "./components/Text";
 import { colors } from "./styled/theme";
 import Heading from "./components/Heading";
-import styled from "styled-components";
-import WaveBackground from "./components/WaveBackground";
+import TodayScreen from "./screens/Today";
 
 type BottomTabParams = {
     Today: undefined;
     Journal: undefined;
 };
-
-const Background = styled(View)`
-    height: 100px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    margin: 0 auto;
-`;
-
-function TodayScreen() {
-    return (
-        <View style={styles.container}>
-            <Background>
-                <WaveBackground />
-            </Background>
-            <Heading>Today</Heading>
-        </View>
-    );
-}
 
 function HabitScreen() {
     return (
@@ -117,9 +97,8 @@ export default function App() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: colors.background,
-        alignItems: "flex-start",
-        justifyContent: "flex-start",
-        minHeight: "100%",
+        backgroundColor: "#fff",
+        alignItems: "center",
+        justifyContent: "center",
     },
 });
