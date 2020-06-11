@@ -41,5 +41,5 @@ export const typography = {
 export const colors = {
   black: "#000000",
   white: "#FFFFFF",
-  gray: "#323E4A",
+  gray: "#57697B",
 };
