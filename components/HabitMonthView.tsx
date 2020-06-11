@@ -1,47 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { StyleSheet, View } from "react-native";
 import Text from "./Text";
 import { colors } from "../styled/theme";
 import { Habit } from "../types/habits";
 
 export function HabitMonthView({ habit }: { habit: Habit }) {
-  const [dayBlocks, setDayBlocks] = useState<React.ReactNode[]>([]);
-
-  useEffect(() => {
-    const today = new Date();
-
-    let items: React.ReactNode[] = [];
-    habit.dates.forEach((h) => {
-      var dateParts = h.day.split("/");
-      const dateObj = new Date(
-        +dateParts[2],
-        Number(dateParts[1]) - 1,
-        +dateParts[0]
-      );
-
-      const hasDatePast = dateObj < today;
-      const isToday =
-        dateObj.setHours(0, 0, 0, 0) == today.setHours(0, 0, 0, 0);
-
-      const blockStyle = StyleSheet.flatten([
-        styles.dayBlock,
-        h.isDone
-          ? { backgroundColor: habit.color, borderWidth: 0 }
-          : hasDatePast
-          ? { backgroundColor: colors.lightGray, borderWidth: 0 }
-          : {},
-      ]);
-
-      items.push(
-        <View style={{ flexDirection: "column" }}>
-          {isToday ? <View style={styles.pointer} /> : null}
-          <View style={blockStyle}></View>
-        </View>
-      );
-    });
-
-    setDayBlocks(items);
-  }, []);
+  const today = new Date();
 
   return (
     <View>
@@ -49,7 +13,36 @@ export function HabitMonthView({ habit }: { habit: Habit }) {
       <Text size="s" color="gray" margin="0 0 m 0 ">
         {habit.description}
       </Text>
-      <View style={styles.blocks}>{dayBlocks.map((x) => x)}</View>
+      <View style={styles.blocks}>
+        {habit.dates.map((h) => {
+          var dateParts = h.day.split("/");
+          const dateObj = new Date(
+            +dateParts[2],
+            Number(dateParts[1]) - 1,
+            +dateParts[0]
+          );
+
+          const hasDatePast = dateObj < today;
+          const isToday =
+            dateObj.setHours(0, 0, 0, 0) == today.setHours(0, 0, 0, 0);
+
+          const blockStyle = StyleSheet.flatten([
+            styles.dayBlock,
+            h.isDone
+              ? { backgroundColor: habit.color, borderWidth: 0 }
+              : hasDatePast
+              ? { backgroundColor: colors.lightGray, borderWidth: 0 }
+              : {},
+          ]);
+
+          return (
+            <View style={{ flexDirection: "column" }}>
+              {isToday ? <View style={styles.pointer} /> : null}
+              <View style={blockStyle}></View>
+            </View>
+          );
+        })}
+      </View>
     </View>
   );
 }

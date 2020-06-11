@@ -25,9 +25,9 @@ export function JournalScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: spacing.xl,
+    paddingTop: 100,
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "white",
     padding: 30,
   },
   monthView: {
