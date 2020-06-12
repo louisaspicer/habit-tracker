@@ -22,6 +22,11 @@ const Background = styled(View)`
     margin: 0 auto;
 `;
 
+const ListWrapper = styled(View)`
+    display: flex;
+    margin: -8px;
+`;
+
 const TodayScreen = () => {
     return (
         <View style={styles.container}>
@@ -36,15 +41,20 @@ const TodayScreen = () => {
                     <Heading>Today</Heading>
                     <Text size={"l"}>What did you get done today?</Text>
                 </View>
-                <FlatList
-                    data={data.habits}
-                    columnWrapperStyle={styles.row}
-                    numColumns={2}
-                    renderItem={({ item }) => (
-                        <Card name={item.name} description={item.description} />
-                    )}
-                    keyExtractor={(item) => item.name}
-                />
+                <ListWrapper>
+                    <FlatList
+                        data={data.habits}
+                        columnWrapperStyle={styles.row}
+                        numColumns={2}
+                        renderItem={({ item }) => (
+                            <Card
+                                name={item.name}
+                                description={item.description}
+                            />
+                        )}
+                        keyExtractor={(item) => item.name}
+                    />
+                </ListWrapper>
             </ScrollView>
         </View>
     );

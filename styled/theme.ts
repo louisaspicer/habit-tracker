@@ -31,9 +31,9 @@ export const typography = {
         },
         heading: {
             xl: 42,
-            l: 36,
-            m: 28,
-            s: 24,
+            l: 24,
+            m: 20,
+            s: 16,
         },
     },
 };
